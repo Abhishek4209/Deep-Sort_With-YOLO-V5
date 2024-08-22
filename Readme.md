@@ -2,4 +2,10 @@
 
 This repo represents implimentation of YOLOv5 and DeepSort in Pytorch for object tracking
 
-![alt text](track_all.gif)
+
+![Demo](img.gif)
+
+
+# Watch Demo:
+
+https://www.youtube.com/watch?v=SnoTsGAR9aY

@@ -9,4 +9,3 @@ seaborn==0.13.1
 torchaudio==0.7.0
 torchvision==0.8.0
 tqdm==4.66.1
--e .

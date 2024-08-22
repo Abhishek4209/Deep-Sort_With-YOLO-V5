@@ -1,16 +1,17 @@
+
 import argparse 
-import time 
-from pathlib import Path
+import time  
+from pathlib import Path  
 
 import cv2  
 import torch 
 import torch.backends.cudnn as cudnn  # Backend for CuDNN (CUDA Deep Neural Network library)
 
 # Setting environment variables
-import os  
+import os  # For interacting with the operating system
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"  # Allowing duplicate libraries for OpenMP
 
-import sys  
+import sys  # For system-specific parameters and functions
 sys.path.insert(0, './yolov5') # Setting path to YOLOv5 module without changing base
 
 from yolov5.models.experimental import attempt_load # loading yolo v5 model 
@@ -263,7 +264,7 @@ def detect(weights='yolov5s.pt',  # model.pt path(s)
             # Print time (inference + NMS)
             print(f'{s}Done. ({t2 - t1:.3f}s)')
 
-            # Stream results
+           # Stream results
             if view_img:  # Check if displaying images is required
                 cv2.imshow(str(p), im0)  # Show the image with detections
                 cv2.waitKey(1)  # Wait for a specified amount of time to display the image
